@@ -1,0 +1,17 @@
+/* TEAM */
+Your title: Lukas Strutz
+Site:lukasstrutz.de https://lukasstrutz.de
+Mail: bastien.wirtz@gmail.com
+Github:  https://github.com/AntonMC-Github
+Twitter: babooon
+Location: Earth.
+ 
+
+/* SITE */
+Standards: HTML5, CSS3, SASS, JAVASCRIPT
+Components: VueJs, Gridsome, Bulma
+Software: vscode, gimp, gridsome-cli
+
+
+/* THANKS */
+Thanks to Bastien Wirtz for creating the wonderful website this is based on
