@@ -72,7 +72,33 @@ import SafeEmail from "~/components/SafeEmail";
 
 export default {
   metaInfo: {
-    title: "lukasstrutz"
+    title: "lukasstrutz",
+    meta: [
+      {name: "description", content: "Moin! Ich bin Lukas. Ich begeistere mich für Technik aller Art. In meiner Freizeit arbeite ich an diversen Projekten." },
+      // twitter-card: https://cards-dev.twitter.com/validator
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:description", content: "Moin! Ich bin Lukas. Ich begeistere mich für Technik aller Art. In meiner Freizeit arbeite ich an diversen Projekten." },
+      { name: "twitter:title", content: "lukasstrutz.de" },
+      { name: "twitter:site", content: "@_AntonMC_" },
+      { name: "twitter:image", content: "" }, //TODO: Image
+      { name: "twitter:creator", content: "@_AntonMC_" },
+      //og
+      { name: "og:type", content: "profile" },
+      { name: "og:title", content: "Lukas Strutz" },
+      { name: "og:url", content: "https://lukasstrutz.de" },
+      { name: "og:image", content: "" }, //TODO: Image
+      { name: "profile:first_name", content: "Lukas" },
+      { name: "profile:last_name", content: "Strutz" },
+      { name: "og:site_name", content: "lukasstrutz.de" },
+      { name: "og:description", content: "Moin! Ich bin Lukas. Ich begeistere mich für Technik aller Art. In meiner Freizeit arbeite ich an diversen Projekten." }
+    ],
+    script: [
+      { src: "https://www.googletagmanager.com/gtag/js?id=G-G79BPZ49EE", async:true},
+      { vmid: 'tag-manager', innerHTML: "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-G79BPZ49EE');"}
+    ]/*,
+    __dangerouslyDisableSanitizersByTagID: {
+      'tag-manager': ['innerHTML']
+    }*/
   },
   components: {
     SafeEmail

@@ -17,10 +17,17 @@ function addStyleResource(rule) {
 
 module.exports = {
   siteName: "lukasstrutz.de",
-  siteDescription: "Lukas Strutz personal website",
+  siteDescription: "Moin! Ich bin Lukas. Ich begeistere mich für Technik aller Art. In meiner Freizeit arbeite ich an diversen Projekten.",
   siteUrl: "https://lukasstrutz.de",
   titleTemplate: "%s",
-  plugins: [],
+  plugins: [
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        
+      }
+    }
+  ],
   chainWebpack(config) {
     // Load variables for all vue-files
     const types = ["vue-modules", "vue", "normal-modules", "normal"];
