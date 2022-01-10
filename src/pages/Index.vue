@@ -18,7 +18,7 @@
           <!--<a
             href="/lukas_strutz_resume.pdf"
             target="_blank"
-            aria-label="Curriculum Vitae"
+            aria-label="Lebenslauf"
             ><font-awesome :icon="['fas', 'file-pdf']"
           /></a>-->
           <a
@@ -35,17 +35,19 @@
             aria-label="Folge mir auf Twitter"
             ><font-awesome :icon="['fab', 'twitter']"
           /></a>
-          <!--<a
-            href="https://www.linkedin.com/in/lukas-strutz/?locale=de_DE"
+          <a
+            href="linkedin.com/in/lukas-strutz-986a36185"
             target="_blank"
             rel="noopener"
             aria-label="Linkedin"
             ><font-awesome :icon="['fab', 'linkedin-in']"
-          /></a>-->
+          /></a>
         </div>
       </div>
     </section>
-    <script type="application/ld+json">
+    
+    <div v-html="message" data-pagespeed-no-transform></div>
+    <!--<script type="application/ld+json">
       {
         "@context": "http://schema.org/",
         "@type": "Person",
@@ -63,7 +65,7 @@
           "name": "Gymnasium Vegesack"
         }
       }
-    </script>
+    </script>-->
   </Layout>
 </template>
 
@@ -72,13 +74,13 @@ import SafeEmail from "~/components/SafeEmail";
 
 export default {
   metaInfo: {
-    title: "lukasstrutz",
+    title: "Lukas Strutz - Bremen",
     meta: [
-      {name: "description", content: "Moin! Ich bin Lukas. Ich begeistere mich für Technik aller Art. In meiner Freizeit arbeite ich an diversen Projekten." },
+      {name: "description", content: "Moin! Ich bin Lukas. Ich begeistere mich für Technik aller Art. In meiner Freizeit arbeite ich an diversen Projekten. Hier findest du meine Social Media Accounts und kannst mich kontaktieren." },
       // twitter-card: https://cards-dev.twitter.com/validator
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:description", content: "Moin! Ich bin Lukas. Ich begeistere mich für Technik aller Art. In meiner Freizeit arbeite ich an diversen Projekten." },
-      { name: "twitter:title", content: "lukasstrutz.de" },
+      { name: "twitter:description", content: "Moin! Ich bin Lukas. Ich begeistere mich für Technik aller Art. In meiner Freizeit arbeite ich an diversen Projekten. Hier findest du meine Social Media Accounts und kannst mich kontaktieren." },
+      { name: "twitter:title", content: "Lukas Strutz - Bremen" },
       { name: "twitter:site", content: "@_AntonMC_" },
       { name: "twitter:image", content: "" }, //TODO: Image
       { name: "twitter:creator", content: "@_AntonMC_" },
@@ -89,20 +91,43 @@ export default {
       { name: "og:image", content: "" }, //TODO: Image
       { name: "profile:first_name", content: "Lukas" },
       { name: "profile:last_name", content: "Strutz" },
-      { name: "og:site_name", content: "lukasstrutz.de" },
-      { name: "og:description", content: "Moin! Ich bin Lukas. Ich begeistere mich für Technik aller Art. In meiner Freizeit arbeite ich an diversen Projekten." }
+      { name: "og:site_name", content: "Lukas Strutz - Bremen" },
+      { name: "og:description", content: "Moin! Ich bin Lukas. Ich begeistere mich für Technik aller Art. In meiner Freizeit arbeite ich an diversen Projekten. Hier findest du meine Social Media Accounts und kannst mich kontaktieren." }
     ],
     script: [
       { src: "https://www.googletagmanager.com/gtag/js?id=G-G79BPZ49EE", async:true},
       { vmid: 'tag-manager', innerHTML: "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-G79BPZ49EE');"}
-    ]/*,
+    ],
     __dangerouslyDisableSanitizersByTagID: {
-      'tag-manager': ['innerHTML']
-    }*/
+      'schema': ['innerHTML']
+    }
   },
   components: {
     SafeEmail
   },
+  data() {
+    return {
+      message: '<script type=\"application/ld+json\"> \
+      { \
+        \"@context\": \"http://schema.org/\", \
+        \"@type\": \"Person\", \
+        \"name\": \"Lukas Strutz\", \
+        \"alternateName\": \"Lukas Strutz, Bremen\", \
+        \"url\": \"https://lukasstrutz.de\", \
+        \"sameAs\": [ \
+          \"https://twitter.com/_AntonMC_\", \
+          \"https://github.com/AntonMC-Github\", \
+          \"https://lukasstrutz.de\" \
+        ], \
+        \"jobTitle\": \"Schüler\", \
+        \"worksFor\": { \
+          \"@type\": \"Organization\", \
+          \"name\": \"Gymnasium Vegesack\" \
+        } \
+      } \
+    <\/script>'
+    }
+  },  
   mounted: function() {
     console.info(
       "Hey ^^, hier gibts nichts zu sehen aber schau dir gerne die Grundlage dieser Website an: https://github.com/bastienwirtz/b4bz.io"

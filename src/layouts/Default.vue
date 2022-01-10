@@ -46,7 +46,26 @@ export default {
   },
   data: function() {
     return {
-      overrideDark: null
+      overrideDark: null,
+      message: '<script type=\"application/ld+json\"> \
+      { \
+        \"@context\": \"http://schema.org/\", \
+        \"@type\": \"Person\", \
+        \"name\": \"Lukas Strutz\", \
+        \"alternateName\": \"Lukas Strutz, Bremen\", \
+        \"url\": \"https://lukasstrutz.de\", \
+        \"sameAs\": [ \
+          \"https://twitter.com/_AntonMC_\", \
+          \"https://github.com/AntonMC-Github\", \
+          \"https://lukasstrutz.de\" \
+        ], \
+        \"jobTitle\": \"Schüler\", \
+        \"worksFor\": { \
+          \"@type\": \"Organization\", \
+          \"name\": \"Gymnasium Vegesack\" \
+        } \
+      } \
+    <\/script>'
     };
   },
   computed: {
