@@ -10,6 +10,7 @@
     "@gridsome/plugin-sitemap": "^0.4.0",
     "bulma": "^0.9.0",
     "gridsome": "^0.7.20",
+    "gridsome-plugin-i18n": "^1.6.0",
     "sass": "^1.45.2"
   },
   "devDependencies": {

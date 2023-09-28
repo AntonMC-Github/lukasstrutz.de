@@ -47,24 +47,24 @@ export default {
   data: function() {
     return {
       overrideDark: null,
-      message: '<script type=\"application/ld+json\"> \
-      { \
-        \"@context\": \"http://schema.org/\", \
-        \"@type\": \"Person\", \
-        \"name\": \"Lukas Strutz\", \
-        \"alternateName\": \"Lukas Strutz, Bremen\", \
-        \"url\": \"https://lukasstrutz.de\", \
-        \"sameAs\": [ \
-          \"https://twitter.com/_AntonMC_\", \
-          \"https://github.com/AntonMC-Github\", \
-          \"https://lukasstrutz.de\" \
-        ], \
-        \"jobTitle\": \"Schüler\", \
-        \"worksFor\": { \
-          \"@type\": \"Organization\", \
-          \"name\": \"Gymnasium Vegesack\" \
-        } \
-      } \
+      message: '<script type=\"application/ld+json\"> \n\
+      { \n\
+        \"@context\": \"http://schema.org/\", \n\
+        \"@type\": \"Person\", \n\
+        \"name\": \"Lukas Strutz\", \n\
+        \"alternateName\": \"Lukas Strutz, Bremen\", \n\
+        \"url\": \"https://lukasstrutz.de\", \n\
+        \"sameAs\": [ \n\
+          \"https://twitter.com/_AntonMC_\", \n\
+          \"https://github.com/AntonMC-Github\", \n\
+          \"https://lukasstrutz.de\" \n\
+        ], \n\
+        \"jobTitle\": \"Schüler\", \n\
+        \"worksFor\": { \n\
+          \"@type\": \"Organization\", \n\
+          \"name\": \"Gymnasium Vegesack\" \n\
+        } \n\
+      } \n\
     <\/script>'
     };
   },

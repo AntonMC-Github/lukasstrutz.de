@@ -4,10 +4,10 @@
       <div class="container">
         <h1 class="title is-2">Moin!<span class="emoji">👋</span></h1>
         <p class="subtitle">
-          Ich bin <span class="highlight">Lukas</span>. Ich begeistere mich für Technik aller Art. <br/> In meiner Freizeit arbeite ich an diversen Projekten. 
+          Ich bin <span class="highlight">Lukas</span>, ursprünglich aus Bremen und jetzt Wirtschaftsinformatikstudent an der TU München. Ich begeistere mich für Technik aller Art. <br/> In meiner Freizeit arbeite ich an diversen Projekten. 
           <span class="location"
             ><font-awesome :icon="['fas', 'map-marker-alt']" />
-            <strong>Erdling</strong> - Bremen, Deutschland</span
+            <strong>Erdling</strong> - München, Deutschland</span
           >
         </p>
         <SafeEmail class="button is-primary is-inline-block">
@@ -36,7 +36,7 @@
             ><font-awesome :icon="['fab', 'twitter']"
           /></a>
           <a
-            href="linkedin.com/in/lukas-strutz-986a36185"
+            href="https://linkedin.com/in/lukas-strutz-986a36185"
             target="_blank"
             rel="noopener"
             aria-label="Linkedin"
@@ -52,17 +52,17 @@
         "@context": "http://schema.org/",
         "@type": "Person",
         "name": "Lukas Strutz",
-        "alternateName": "Lukas Strutz, Bremen",
+        "alternateName": "Lukas Strutz, München, Bremen",
         "url": "https://lukasstrutz.de",
         "sameAs": [
           "https://twitter.com/_AntonMC_",
           "https://github.com/AntonMC-Github",
           "https://lukasstrutz.de"
         ],
-        "jobTitle": "Schüler",
+        "jobTitle": "Student",
         "worksFor": {
           "@type": "Organization",
-          "name": "Gymnasium Vegesack"
+          "name": "Technische Universitaet Muenchen"
         }
       }
     </script>-->
@@ -80,7 +80,7 @@ export default {
       // twitter-card: https://cards-dev.twitter.com/validator
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:description", content: "Moin! Ich bin Lukas. Ich begeistere mich für Technik aller Art. In meiner Freizeit arbeite ich an diversen Projekten. Hier findest du meine Social Media Accounts und kannst mich kontaktieren." },
-      { name: "twitter:title", content: "Lukas Strutz - Bremen" },
+      { name: "twitter:title", content: "Lukas Strutz - München" },
       { name: "twitter:site", content: "@_AntonMC_" },
       { name: "twitter:image", content: "" }, //TODO: Image
       { name: "twitter:creator", content: "@_AntonMC_" },
@@ -91,7 +91,7 @@ export default {
       { name: "og:image", content: "" }, //TODO: Image
       { name: "profile:first_name", content: "Lukas" },
       { name: "profile:last_name", content: "Strutz" },
-      { name: "og:site_name", content: "Lukas Strutz - Bremen" },
+      { name: "og:site_name", content: "Lukas Strutz - München" },
       { name: "og:description", content: "Moin! Ich bin Lukas. Ich begeistere mich für Technik aller Art. In meiner Freizeit arbeite ich an diversen Projekten. Hier findest du meine Social Media Accounts und kannst mich kontaktieren." }
     ],
     script: [
@@ -112,7 +112,7 @@ export default {
         \"@context\": \"http://schema.org/\", \
         \"@type\": \"Person\", \
         \"name\": \"Lukas Strutz\", \
-        \"alternateName\": \"Lukas Strutz, Bremen\", \
+        \"alternateName\": \"Lukas Strutz, München\", \
         \"url\": \"https://lukasstrutz.de\", \
         \"sameAs\": [ \
           \"https://twitter.com/_AntonMC_\", \
