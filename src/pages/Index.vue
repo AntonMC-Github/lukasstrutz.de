@@ -2,7 +2,7 @@
   <Layout>
     <section class="section">
       <div class="container">
-        <h1 class="title is-2">Moin!<span class="emoji">👋</span></h1>
+        <h1 class="title is-2">Servus!<span class="emoji">👋</span></h1>
         <p class="subtitle">
           Ich bin <span class="highlight">Lukas</span>, ursprünglich aus Bremen und jetzt Wirtschaftsinformatikstudent an der TU München. Ich begeistere mich für Technik aller Art. <br/> In meiner Freizeit arbeite ich an diversen Projekten. 
           <span class="location"
